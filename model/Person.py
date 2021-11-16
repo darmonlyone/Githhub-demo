@@ -1,15 +1,19 @@
 class Person:
     def __init__(self, name, age):
-        pass
+        self.name = name
+        self.age = age
 
-    def change_name(self):
-        pass
 
-    def change_age(self):
-        pass
+
+    def change_name(self, name):
+        self.name = name
+
+
+    def change_age(self, age):
+        self.age = age
 
     def __repr__(self):
         """
         :return: 'name age years old'
         """
-        pass
+        return f"{self.name} {self.age} years old"
