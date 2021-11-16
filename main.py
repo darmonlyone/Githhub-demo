@@ -15,14 +15,14 @@ while True:
         for person in people:
             print(person)
     elif ip == "F":
+        old_name = input("Old Name:")
         for person in people:
-            old_name = input("Old Name:")
             if person.name == old_name:
                 new_name = input("input New Name:")
                 new_age = int(input("input New Age:"))
                 person.change_name(new_name)
                 person.change_age(new_age)
-
-
     else:
         print("Invalid Input please try again")
+
+    print("\n")
