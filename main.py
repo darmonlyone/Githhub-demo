@@ -22,7 +22,7 @@ while True:
                 new_age = int(input("input New Age:"))
                 person.change_name(new_name)
                 person.change_age(new_age)
-
-
     else:
         print("Invalid Input please try again")
+
+    print("\n")
