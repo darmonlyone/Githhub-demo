@@ -3,7 +3,7 @@ from model.Person import Person
 names = []
 
 while True:
-    ip = input("Enter code\nA: add person\nL: list people\nE: exit")
+    ip = input("A: add person\nL: list people\nE: exit\nEnter code: ")
 
     if ip == "E":
         break
