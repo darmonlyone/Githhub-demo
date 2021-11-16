@@ -3,11 +3,8 @@ class Person:
         self.name = name
         self.age = age
 
-
-
     def change_name(self, name):
         self.name = name
-
 
     def change_age(self, age):
         self.age = age
