@@ -1,18 +1,28 @@
 from model.Person import Person
 
-names = []
+people = []
 
 while True:
-    ip = input("A: add person\nL: list people\nE: exit\nEnter code: ")
+    ip = input("A: add person\nL: list people\nF: change person\nE: exit\nEnter code: ")
 
     if ip == "E":
         break
     elif ip == "A":
-        names.append(Person(
+        people.append(Person(
             input("Enter Name:"),
             int(input("Enter Age:"))))
     elif ip == "L":
-        for name in names:
-            print(name)
+        for person in people:
+            print(person)
+    elif ip == "F":
+        for person in people:
+            old_name = input("Old Name:")
+            if person.name == old_name:
+                new_name = input("input New Name:")
+                new_age = int(input("input New Age:"))
+                person.change_name(new_name)
+                person.change_age(new_age)
+
+
     else:
         print("Invalid Input please try again")
