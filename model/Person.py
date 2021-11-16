@@ -7,7 +7,7 @@ class Person:
         self.name = name
 
     def change_age(self, age):
-        self.age = age
+        pass
 
     def __repr__(self):
         """
